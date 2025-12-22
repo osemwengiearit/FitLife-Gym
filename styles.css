@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", "Inter", sans-serif;
+  line-height: 1.7;
+  color: #fbfcfe;
+}
+
+.site-header {
+  display: block;
+  text-align: center;
+  position: -webkit-sticky;
+  z-index: 50;
+  top: 0;
+  color: #fbfcfe;
+  background: #1a1a1a;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 30px;
+  align-items: center;
+  text-transform: uppercase;
+  color: #00ff88;
+  font-weight: 700;
+}
+
+.logo:hover {
+  color: #fbfcfe;
+}
+
+nav {
+  display: block;
+  gap: 18px;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+nav a {
+  color: #fbfcfe;
+  padding: 8px 10px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  justify-content: space-between;
+}
+
+nav a:hover {
+  color: #00ff88;
+}
+
+.hero-container {
+  min-height: 100vh;
+  display: flex;
+  background: url(img/hero-img.png);
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  max-width: 900px;
+  padding: 20px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.hero-content h1 {
+  font-size: clamp(1.6rem, 3.5vw, 3rem);
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: #fbfcfe;
+  margin-bottom: 20px;
+  text-align: center;
+  margin: 0 auto 20px;
+  text-transform: uppercase;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  color: #fbfcfe;
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.hero-btn {
+  background: #00ff88;
+  color: #1a1a1a;
+  padding: 16px 40px;
+  border: none;
+  border-radius: 40px;
+  font-weight: 600;
+  align-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: capitalize;
+}
+
+.hero-btn:hover {
+  transform: scale(1.05);
+}
+
+.membership {
+  padding: 80px 20px;
+  background: #fbfcfe;
+  text-align: center;
+  color: #1a1a1a;
+}
+
+.membership h2 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.underline {
+  display: block;
+  width: 50px;
+  height: 4px;
+  background: #00ff88;
+  margin: 0 auto 50px;
+}
+
+.plans-card {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background: #fbfcfe;
+  border-radius: 14px;
+  padding: 40px 30px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+}
+
+.card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+}
+
+.price {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.price span {
+  font-size: 0.9rem;
+  color: #1a1a1a;
+}
+
+.card ul {
+  list-style: none;
+  margin: 30px 0;
+  padding: 0;
+  text-align: left;
+}
+
+.card ul li {
+  position: relative;
+  padding-left: 26px;
+  margin-bottom: 14px;
+  font-size: 0.95rem;
+}
+
+.card ul li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #00ff88;
+  font-weight: 800;
+}
+
+.plans-btn {
+  background: #1a1a1a;
+  color: #fff;
+  padding: 14px 32px;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: capitalize;
+}
+
+.plans-btn:hover {
+  background: #00ff88;
+  color: #1a1a1a;
+}
+
+.card .badge {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #00ff88;
+  color: #1a1a1a;
+  font-size: 0.75rem;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.plans-card .card:nth-child(2) {
+  border: 2px solid #00ff88;
+  background: #f6fff9;
+}
+
+.class-schedule {
+  background: #f9f9f9;
+}
