@@ -231,58 +231,73 @@
               </div>
 
               <div class="user-goals">
-                <h3>fitness goals <span>(Select all that apply)</span></h3>
+                <h3>
+                  Fitness Goals
+                  <span>(Select all that apply)</span>
+                </h3>
+
                 <div class="goals">
-                  <input type="checkbox" />
-                  <label>weight loss</label>
+                  <input type="checkbox" id="goal-weight" />
+                  <label for="goal-weight">Weight loss</label>
                 </div>
 
                 <div class="goals">
-                  <input type="checkbox" />
-                  <label>build muscle</label>
+                  <input type="checkbox" id="goal-muscle" />
+                  <label for="goal-muscle">Build muscle</label>
                 </div>
 
                 <div class="goals">
-                  <input type="checkbox" />
-                  <label>improve cardio</label>
+                  <input type="checkbox" id="goal-cardio" />
+                  <label for="goal-cardio">Improve cardio</label>
                 </div>
 
                 <div class="goals">
-                  <input type="checkbox" />
-                  <label>flexibility</label>
+                  <input type="checkbox" id="goal-flexibility" />
+                  <label for="goal-flexibility">Flexibility</label>
                 </div>
               </div>
 
               <div class="user-level">
-                <h3>experience level</h3>
+                <h3>Experience Level</h3>
 
                 <div class="goals">
-                  <input type="radio" />
-                  <label>beginner</label>
+                  <input type="radio" name="experience" id="level-beginner" />
+                  <label for="level-beginner">Beginner</label>
                 </div>
 
                 <div class="goals">
-                  <input type="radio" />
-                  <label>intermidate</label>
+                  <input
+                    type="radio"
+                    name="experience"
+                    id="level-intermediate"
+                  />
+                  <label for="level-intermediate">Intermediate</label>
                 </div>
 
                 <div class="goals">
-                  <input type="radio" />
-                  <label>advance</label>
+                  <input type="radio" name="experience" id="level-advanced" />
+                  <label for="level-advanced">Advanced</label>
                 </div>
               </div>
 
               <div class="input-details">
-                <label>medical conditions or injuries (optional)</label>
+                <label for="medical">
+                  Medical conditions or injuries
+                  <span>(Optional)</span>
+                </label>
+
                 <textarea
+                  id="medical"
                   rows="5"
                   placeholder="Please list any conditions we should be aware of..."
                 ></textarea>
               </div>
 
-              <div class="cta-group">
-                <input type="checkbox" id="terms" />
-                <label>I agree to the membership terms and conditions</label>
+              <div class="cta-btn">
+                <input type="checkbox" id="terms" required />
+                <label for="terms">
+                  I agree to the membership terms and conditions
+                </label>
               </div>
 
               <button class="submit">complete registeration</button>
@@ -292,11 +307,14 @@
       </section>
     </main>
 
-    <footer class="footer-section">
+    <footer class="main-footer">
       <div class="footer-container">
         <div class="footer-section">
           <h3>contact us</h3>
-          <p>📍456 fitness avenue, los angeles, ca 90028</p>
+          <p>
+            📍456 fitness avenue, los angeles, CA <br />
+            90028
+          </p>
           <p>📞(555) 789-0123</p>
           <p>✉️info@fitlifegym.com</p>
         </div>
@@ -313,7 +331,7 @@
           <h3>hours</h3>
           <p>monday-friday: 5:00am-11:00pm</p>
           <p>saturday-sunday: 6:00am-10:00pm</p>
-          <p>Pro & Elite members have 24/7 access</p>
+          <p class="pro">Pro & Elite members have 24/7 access</p>
         </div>
       </div>
 
