@@ -296,3 +296,47 @@ tbody td:nth-child(5) {
   color: #888;
   font-weight: 400;
 }
+
+.features-section {
+  padding: 20px;
+  text-align: center;
+  background: #f6fff9;
+}
+
+.features-section h2 {
+  font-size: 2rem;
+  color: #1a1a1a;
+  font-weight: 700;
+  text-align: center;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.5rem;
+  margin-top: 3rem;
+  background: #fbfcfe;
+  color: #1a1a1a;
+}
+
+.features-card {
+  padding: 30px;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.features-card img {
+  width: 50%;
+}
+
+.features-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.features-card p {
+  color: #888;
+  /* text-align: left; */
+}
