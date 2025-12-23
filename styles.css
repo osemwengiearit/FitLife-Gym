@@ -66,13 +66,12 @@ nav a:hover {
 }
 
 .hero-container {
-  min-height: 100vh;
   display: flex;
+  justify-content: center;
+  padding: 80px 20px;
   background: url(img/hero-img.png);
   background-size: cover;
-  background-position: center;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
 }
 
 .hero-content {
@@ -83,20 +82,18 @@ nav a:hover {
 }
 
 .hero-content h1 {
-  font-size: clamp(1.6rem, 3.5vw, 3rem);
+  font-size: 3.5rem;
   font-weight: 800;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   color: #fbfcfe;
-  margin-bottom: 20px;
-  text-align: center;
-  margin: 0 auto 20px;
+  margin-bottom: 10px;
   text-transform: uppercase;
 }
 
 .hero-content p {
-  font-size: 1.1rem;
+  font-size: 1rem;
+  font-weight: 500;
   color: #fbfcfe;
-  text-align: left;
   margin-bottom: 25px;
 }
 
@@ -235,5 +232,67 @@ nav a:hover {
 }
 
 .class-schedule {
+  margin: auto;
+  padding: 60px;
+  justify-content: space-between;
   background: #f9f9f9;
+}
+
+.class-schedule h2 {
+  font-size: 2rem;
+  color: #1a1a1a;
+  font-weight: 700;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.schedule {
+  color: #1a1a1a;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  background: #f9f9f9;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+thead {
+  padding: 15px;
+  color: #f6fff9;
+  background: #1a1a1a;
+  text-transform: uppercase;
+}
+
+th,
+td {
+  padding: 15px;
+  text-align: left;
+}
+
+.time {
+  background: #00ff88;
+  color: #1a1a1a;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: 600;
+  display: inline-block;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+
+tbody td:nth-child(2) {
+  font-weight: 800;
+  color: #1a1a1a;
+  font-size: 1.05rem;
+}
+
+tbody td:nth-child(3),
+tbody td:nth-child(4),
+tbody td:nth-child(5) {
+  color: #888;
+  font-weight: 400;
 }
